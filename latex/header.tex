@@ -1,0 +1,80 @@
+
+\def\CI{\mathcal{I}}
+\def\CC{\mathcal{C}}
+\def\RR{\mathbb{R}}
+\def\ZZ{\mathbb{Z}}
+
+% Custom commands for functions and method names
+\def\loss{\bm{l}}
+\def\true{true}
+\def\lab{lab}
+\def\data{data}
+
+\newcommand{\pr}[1]{\mbox{Pr}\left\{#1\right\}}
+
+\newcommand{\exsub}[2]{\mbox{E}_{#1}\left\{#2\right\}}
+\newcommand{\prsub}[2]{\mbox{Pr}_{#1}\left\{#2\right\}}
+\newcommand{\ind}[1]{\mathrm{1}_{#1}}
+\newcommand{\prob}[1]{\mbox{Pr}\left\{#1\right\}}
+\newcommand{\ex}[1]{\mbox{E}\left\{#1\right\}}
+
+\newcommand{\ignore}[1]{}
+
+\newcommand{\abcomment}[1]{{\color{blue}{[[[AB: #1]]]}}}
+\newcommand{\sbcomment}[1]{\textcolor{red}{[[[\textbf{SB: }#1]]]}}
+
+\newcommand{\todo}[1]{{\color{orange} \textbf{TODO:}#1}}
+\newcommand{\unsure}[1]{{\color{brown} \textbf{UNSURE:}#1}}
+\newcommand{\done}[1]{{\color{teal} \scriptsize \textbf{DONE:}#1}}
+\newcommand{\note}[1]{{\color{purple} \scriptsize \textbf{NOTE:}#1}}
+
+\def\vec#1{\boldsymbol{#1}}
+\def\vu{\vec{u}}
+\def\vv{\vec{v}}
+\def\vw{\vec{\omega}}
+
+\def\eucdist#1#2{\varrho(#1, #2)}
+\def\projdist#1#2#3{\varrho_{#1}(#2, #3)}
+\def\mindist{\varrho_{\min}}
+% \def\mag#1{| #1 |}
+\def\ip#1#2{\langle #1, #2 \rangle}
+\def\RRd#1{\mathbb{R}^{#1}}
+\def\1#1{\mathbbm{1}_{#1}}
+
+\def\P#1{\mbox{P}(#1)}
+\newcommand\Psub[2]{\mbox{P}_{#1}(#2)}
+\def\E#1#2{\mbox{E}_{#1}(#2)}
+\def\F#1{\mbox{F}(#1)}
+\def\G#1{\mbox{G}(#1)}
+\def\H#1{\mbox{H}(#1)}
+\def\auc{\texttt{AUC ROC}}
+
+% Move to appendix as appropriate
+\newif\ifcutlevone
+\newif\ifcutlevtwo
+\newif\ifcutlevthree
+\cutlevonetrue
+\cutlevtwotrue
+\cutlevthreefalse
+
+% problem with defining fact
+\newtheorem{fact}{Fact}
+
+% \newtheorem{theorem}{Theorem}
+% \newtheorem{definition}[theorem]{Definition}
+% \newtheorem{fact}{theorem}{Fact}
+% \newtheorem{proof}[theorem]{Proof}
+% \newtheorem{lemma}[theorem]{Lemma}
+% \newtheorem{proposition}[theorem]{Proposition}
+
+% squeezing the life..oops..space out
+\setlength{\abovedisplayskip}{1pt}
+\setlength{\belowdisplayskip}{1pt}
+%\setlength{\abovecaptionskip}{1pt}
+%\setlength{\belowcaptionskip}{1pt}
+\setlength{\intextsep}{0pt plus 1pt minus 1pt}
+\setlength{\textfloatsep}{0pt plus 1.0pt minus 2.0pt}%{10pt plus 1.0pt minus 2.0pt}
+\setlength{\dblfloatsep}{-1pt plus 2.0pt minus 2.0pt}
+\renewcommand{\floatpagefraction}{1}
+% \setlength\parskip{0pt plus 0.1pt minus 0.1pt}
+%\raggedbottom
